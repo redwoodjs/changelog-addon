@@ -54,14 +54,15 @@ Add the following dependencies to your `package.json` file:
 
 Then run `pnpm install`.
 
-### 5. Install & Setup Tailwind CSS
+### 5. Install & Setup Tailwind CSS v4
 
-Download Follow the Tailwind CSS instructions here: https://docs.rwsdk.com/guides/frontend/tailwind/
+Install Tailwind v4 using these instructions `https://raw.githubusercontent.com/redwoodjs/sdk/refs/heads/main/docs/src/content/docs/guides/frontend/tailwind.mdx`
 
-Then, add the Tailwind CSS Topography Plugin to "src/app/styles.css"
+Once installed, add the [Tailwind CSS Topography Plugin](https://github.com/tailwindlabs/tailwindcss-typography) to "src/app/styles.css"
 
 ```css
 /* ... existing configuration ... */
+@import "tailwindcss";
 @plugin "@tailwindcss/typography";
 ```
 
