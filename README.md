@@ -41,7 +41,10 @@ Copy the `src/changelog` directory into your project's `addon` directory. This w
 
 ### 3. Install TailwindCSS
 
-Follow the [RedwoodSDK installation guide for Tailwind CSS]https://docs.rwsdk.com/guides/frontend/tailwind/)
+Install the Tailwind CSS Vite Plugin, following the RedwoodSDK documentation:
+
+https://docs.rwsdk.com/guides/frontend/tailwind
+
 
 
 ### 4. Update `package.json`
@@ -97,23 +100,17 @@ Modify `src/worker.tsx` to integrate the passkey authentication and routes.
 ```typescript
 // ...
 
-import  { changelogRoutes } from '@/app/addons/changelog/routes'
+import  { changelogRoutes } from '@/addons/changelog/routes'
 
 export default defineApp([
   // ...
   render(Document, [
     // ...
-    prefix('/changelog/', changelogRoutes)
+    prefix('/changelog', changelogRoutes)
   ]),
 ]);
 ```
 
 ### 8. Run the dev server
 
-Now you can run the dev server:
-
-```shell
-pnpm dev
-```
-
-You should now be able to access "/changelog" in your browser to view the releases associated to your Github repository.
+You should now be able to access "/changelog" in your browser to view the releases from your GitHub repository.
