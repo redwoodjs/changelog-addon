@@ -37,13 +37,7 @@ npx degit redwoodjs/changelog-addon _tmp_passkey_addon
 
 Copy the `src/changelog` directory into your project's `addon` directory. This will add the following directories:
 
-- `src/addon/changelog`: Functionality.
-
-### 3. Install TailwindCSS
-
-Install the Tailwind CSS Vite Plugin, following the RedwoodSDK documentation:
-
-https://docs.rwsdk.com/guides/frontend/tailwind
+- `src/addons/changelog`: Functionality.
 
 ### 4. Update `package.json`
 
@@ -62,11 +56,9 @@ Then run `pnpm install`.
 
 ### 5. Install & Setup Tailwind CSS
 
-Follow the Tailwind CSS instructions available at:
+Download Follow the Tailwind CSS instructions here: https://docs.rwsdk.com/guides/frontend/tailwind/
 
-https://docs.rwsdk.com/guides/frontend/tailwind/#installing-tailwind 
-
-Add the Tailwind CSS Topography Plugin to "src/app/styles.css"
+Then, add the Tailwind CSS Topography Plugin to "src/app/styles.css"
 
 ```css
 /* ... existing configuration ... */
