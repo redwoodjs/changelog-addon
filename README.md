@@ -44,7 +44,7 @@ Copy the `src/changelog` directory into your project's `addon` directory. This w
 Follow the [RedwoodSDK installation guide for Tailwind CSS]https://docs.rwsdk.com/guides/frontend/tailwind/)
 
 
-### 3. Update `package.json`
+### 4. Update `package.json`
 
 Add the following dependencies to your `package.json` file:
 
@@ -58,11 +58,11 @@ Add the following dependencies to your `package.json` file:
 
 Then run `pnpm install`.
 
-### 4. Install Tailwind CSS
+### 5. Install Tailwind CSS
 
 Follow the 
 
-### 4. Update `wrangler.jsonc`
+### 6. Update `wrangler.jsonc`
 
 Run the wrangler command to create a new KV namespace:
 
@@ -90,7 +90,7 @@ also add the `CHANGELOG_ADDON_REPO` env-var.
 }
 ```
 
-### 5. Update `src/worker.tsx`
+### 7. Update `src/worker.tsx`
 
 Modify `src/worker.tsx` to integrate the passkey authentication and routes.
 
@@ -108,7 +108,7 @@ export default defineApp([
 ]);
 ```
 
-### 6. Run the dev server
+### 8. Run the dev server
 
 Now you can run the dev server:
 
